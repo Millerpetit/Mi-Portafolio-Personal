@@ -11,7 +11,7 @@ Este es un Portafolio Web creado en Html, estilos Css e interacciones Javascrip 
 ## Vista previa del proyecto
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/Millerpetit/Mi-Portafolio-Personal/blob/main/Capture-portfolio.jpg?raw=true)
+![Captura del proyecto](https://github.com/Millerpetit/Mi-Portafolio-Personal/main/Capture.jpg?raw=true)
 
 ## Ejemplo en vivo
 - [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
