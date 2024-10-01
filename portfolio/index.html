@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Petit</title>
+    <link rel="shortcut icon" href="assets/images/maletin.png" type="image/x-icon">
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- CSS AOS - Animar Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="">
+
+    <!-- Preloader -->
+    <div class="overlay-pre flex-column text-white" id="preloader">
+      <div class="spinner-border" role="status" style="font-size: 2rem;">
+        <span class="sr-only"></span>
+      </div>
+      <div class="loading-text mt-1 fs-5 fw-bold">Cargando...</div>
+    </div>
+
+    <!-- Boton de scroll hacia arriba -->
+    <button id="scrollToTop" onclick="" class="border-0 rounded-circle text-white p-3 position-fixed bottom-0 end-0 me-3 d-flex justify-content-center align-items-center d-none"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
+            <div class="container">
+              <a class="navbar-brand">Mi portafolio</a>
+              <button id="navbarToggler" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-me">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="form-check form-switch d-flex justify-content-center align-items-center">
+                      <input class="form-check-input me-1 text-white" type="checkbox" role="switch" id="darkModeToggle">
+                      <label class="form-check-label nav-link disabled align-items-center" for="flexSwitchCheckDefault"><i class="fa-solid fa-moon" id="icon"></i></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Sección home -->
+    <section id="home" class="home d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container p-4">
+            <div class="row d-none" id="hide">
+                <div class="col-md-12 text-center">
+                    <div class="texts">
+                      <h1 class="display-1 fw-bold text-white">¡Hola!</h1>
+                      <p class="fs-3 fw-bolder text-white">
+                        <span class="typed"></span>
+                      </p>
+                    </div>
+                    <div id="texts" class="texts">
+                      <p class="fs-3 fw-bolder text-white">Me llamo <span class="text-warning">Miller Petit</span></p>
+                      <p class="fs-3 fw-bolder text-white">Soy un <span class="text-warning text-capitalize">desarrollador Back-end</span></p>
+                    </div>
+                    <div class="buttons d-flex justify-content-center flex-column flex-md-row gap-2">
+                      <a href="#projects" class="btn btn-danger fs-5 rounded-0 p-3">Mis proyectos</a>
+                      <a href="#contact" class="btn btn-primary fs-5 rounded-0 p-3">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section id="about-me">
+      <div class="container p-4 my-5">
+        <div class="row">
+          <!-- Contenedor de la foto -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center mb-5">
+            <div class="foto-container" data-aos="fade-up">
+              <img src="assets/images/desarrollo web.jpg" alt="" class="img-fluid">
+              <div class="overlay-socials">
+                <a href="https://github.com/Miller-Petit-Dev" class="nav-link social-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/millerpetit/" class="nav-link social-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="nav-link social-link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Contenedor de la descripción -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">            
+            <div class="descripcion-container text-justify text-md-start" data-aos="fade-up">
+              <h2 class="fw-bold mb-3">Un poco sobre mí...</h2>
+              <p class="text-muted">Soy un apasionado por el desarrollo de Software con experiencia en tecnologías claves como Java, Spring y SQL . Me destaco en la gestión de proyectos utilizando herramientas como Git, Maven y Jenkins y tengo un solido conocimiento en el manejo de versiones como SVN y GitLab.</p>
+              <p class="text-muted">Me encanta colaborar en equipos multidisciplinarios y contribuir en proyectos que desafían mis habilidades técnicas. Estoy abierto a nuevas oportunidades y siempre listo para enfrentar nuevos retos en el ámbito del desarrollo.</p>
+              <p class="text-muted">Me enfoco en interpretar su vision y expectativa, adaptandola a los condicionantes tecnicos del proyecto y a las necesidades del usuario final.</p>
+            </div>
+          <div class="row">
+              <div class="col-lg-12" data-aos="fade-up">
+                <a href="assets/files/Curriculum.pdf" target="_blank" class="btn btn-danger fs-5 rounded-0">Descargar CV</a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Seccion habilidades -->
+    <section id="skills" class="text-center">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center" data-aos="fade-up">
+              <h2 class="fw-bold mb-5">Habilidades</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-skills d-flex justify-content-center align-items-center">
+            <div class="row gap-3 justify-content-center">
+              <div class="col-4 col-lg-2 col-md-2 col-sm-4 d-flex justify-content-center align-items-center flex-column py-3 bg-secondary-subtle skill" data-aos="fade-up">
+                <div class="skill-item">
+                  <i class="fa-brands fa-java display-2"></i>
+                </div>
+                <div class="skill-name">
+                  <h3 class="fs-5 m-0">Java </h3>
+                </div>
+              </div>
+              <div class="col-4 col-lg-2 col-md-2 col-sm-4 d-flex justify-content-center align-items-center flex-column p-1 bg-secondary-subtle skill" data-aos="fade-up">
+                <div class="skill-item">
+                  <i class="bi bi-feather display-2"></i>
+                </div>
+                <div class="skill-name">
+                  <h3 class="fs-5 m-0">Springboot</h3>
+                </div>
+              </div>
+              <div class="col-4 col-lg-2 col-md-2 col-sm-4 d-flex justify-content-center align-items-center flex-column p-1 bg-secondary-subtle skill" data-aos="fade-up">
+                <div class="skill-item">
+                  <i class="bi bi-bug display-2"></i>
+                </div>
+                <div class="skill-name">
+                  <h3 class="fs-5 m-0">Testing</h3>
+                </div>
+              </div>
+              <div class="col-4 col-lg-2 col-md-2 col-sm-4 d-flex justify-content-center align-items-center flex-column p-1 bg-secondary-subtle skill" data-aos="fade-up">
+                <div class="skill-item">
+                  <i class="bi bi-database display-2"></i>
+                </div>
+                <div class="skill-name">
+                  <h3 class="fs-5 m-0">Base de datos</h3>
+                </div>
+              </div>
+              <div class="col-4 col-lg-2 col-md-2 col-sm-4 d-flex justify-content-center align-items-center flex-column p-1 bg-secondary-subtle skill" data-aos="fade-up">
+                <div class="skill-item">
+                  <i class="bi bi-diagram-3 display-2"></i>
+                </div>
+                <div class="skill-name">
+                  <h3 class="fs-5 m-0">Microservicios</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion servicios -->
+    <section class="services py-5 px-2" id="services">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center" data-aos="fade-up">
+              <h2 class=" fw-bold mb-5">¿Qué es lo que hago?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="service-item p-4 rounded-0 bg-secondary-subtle d-flex flex-column h-100">
+              <div class="icon my-3 fs-2">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="fs-3 py-2">Desarrollo Back-end</h3>
+              <p class="flex-grow-1">Me especializo en la creación y expansión de funcionalidades críticas para plataformas, utilizando tecnología JAVA y herramientas de pruebas como JUnit y Postman.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="service-item p-4 rounded-0 bg-secondary-subtle d-flex flex-column h-100">
+              <div class="icon my-3 fs-2">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+              <h3 class="fs-3 py-2">Base de Datos</h3>
+              <p class="flex-grow-1">Mi trabajo es crear estructuras de base de datos eficientes y escalables para almacenar y recuperar información. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="service-item p-4 rounded-0 bg-secondary-subtle d-flex flex-column h-100">
+              <div class="icon my-3 fs-2">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <h3 class="fs-3 py-2">Desarrollo de APIs</h3>
+              <p class="flex-grow-1">Desarrollo interfaces de programación en aplicaciones para conectar el Frontend con el Backend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Seccion de proyectos -->
+    <section id="projects" class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center" data-aos="fade-up">
+              <h2 class="fw-bold mb-5">Proyectos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="proyectos">
+
+            <!-- Cards de proyectos -->
+
+            <!-- Modal info -->
+            <div class="modal fade justify-content-center align-items-center" id="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="projectTitle"></h5>
+                    <button type="button" class="btn fs-5 modal-close" data-bs-dismiss="modal" aria-label="Close" onclick="cerrarModal()">
+                      <i class="fa-sharp fa-solid fa-x"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body" id="modalBody">
+                    <p id="projectDescription"></p>
+                    <div id="badges"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <a id="url-code" type="button" class="btn btn-success rounded-0 fs-5" target="_blank">Código</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Seccion de contacto -->
+    <section id="contact" class="contact py-5 bg-secondary-subtle">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center" data-aos="fade-up">
+              <h2 class="fw-bold mb-5">Contáctame</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-contact d-flex justify-content-center align-items-center">
+              <form id="contactform" class="needs-validation" id="form" action="https://formsubmit.co/be755ffbd316d9df3dc35f59bd1cb763" method="POST" style="width: 25rem;" novalidate>
+                <!-- Para evitar rellenar captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo mensaje">
+                <div class="mb-3 d-flex gap-2">
+                  <div class="" data-aos="fade-up">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0 border-secondary-subtle" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <div class="invalid-feedback fw-bold">
+                      El campo no puede estar vacío
+                    </div>
+                  </div>
+                  <div class="" data-aos="fade-up">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0 border-secondary-subtle" id="asunto" name="asunto" placeholder="Asunto" required>
+                    <div class="invalid-feedback fw-bold">
+                      El campo no puede estar vacío
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3" data-aos="fade-up">
+                  <input type="email" class="form-control form-control-lg fs-6 rounded-0 border-secondary-subtle" id="email" name="email" placeholder="Correo electrónico" required>
+                  <div class="invalid-feedback fw-bold">
+                    Ingrese un correo, por favor
+                  </div>
+                </div>
+                <div class="mb-3" data-aos="fade-up">
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0 border-secondary-subtle" placeholder="Deje su mensaje aquí..." required></textarea>
+                  <div class="invalid-feedback fw-bold">
+                    Debe escribir un mensaje
+                  </div>
+                </div>
+                <div class="mb-3" data-aos="fade-up">
+                  <button type="submit" class="btn btn-primary fs-5 fw-bold rounded-0 d-block w-100">Enviar mensaje <i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-lg-8">
+                <div class="section-title text-center" data-aos="fade-up">
+                  <h5 class="fw-bold mb-2">También me puedes contactar por:</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-12" data-aos="fade-up">
+                <div class="socials-content d-flex justify-content-center align-items-center gap-3 text-dark">
+                  <div class="social-item">
+                    <a href="https://github.com/Miller-Petit-Dev" class="nav-link social-link" target="_blank"><i class="fa-brands fa-github me-1"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="https://www.linkedin.com/in/millerpetit/" class="nav-link social-link" target="_blank"><i class="fa-brands fa-linkedin me-1"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="#" class="nav-link social-link" target="_blank"><i class="fa-brands fa-whatsapp me-1"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="bg-dark py-4">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-white m-0 text-center">&copy; Miller Petit 2024</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+      <script src="assets/js/preloader.js"></scrip>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!--CDN Libreria Typed.js -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Dark Mode -->
+      <script src="assets/js/dark-mode.js"></script>
+      <!-- Nav.js -->
+      <script src="assets/js/nav.js"></script>
+      <!-- Proyectos.js -->
+      <script src="assets/js/proyectos.js"></script>
+      <!-- Bootstrap-validation.js -->
+      <script src="assets/js/bootstrap-validation.js"></script>
+      <!-- Script animar scroll -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Metodo para arrancar las animaciones scroll -->
+      <script>
+        AOS.init({
+          //para la duracion de la animacion
+          duration: 1300,
+          once: "" //Para que la animacion no se repita
+        });
+      </script>
+      <!-- Font-Awesome -->
+      <script src="https://kit.fontawesome.com/45fc83ca5a.js" crossorigin="anonymous"></script>
+      <!-- Form.js -->
+      <script src="assets/js/form.js"></script>
+      <!-- SweetAlert2 libreria -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Boton Scroll To Top -->
+    <script src="assets/js/scroll-to-top.js"></script>
+</body>
+</html>

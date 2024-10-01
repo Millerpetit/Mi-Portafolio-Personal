@@ -1,0 +1,8 @@
+/* Estilos generales de la pagina */
+@import url('general-styles.css');
+
+/* Estilos y modificaciones a Bootstrap */
+@import url('bootstrap-styles.css');
+
+/* Responsive */
+@import url('responsive.css');

@@ -1,0 +1,52 @@
+{
+    "Proyectos": [
+        {
+            "nombre-proyecto": "Página de Perfumes",
+            "descripcion": "Esta página fue replicada de una página ya existente.",
+            "url-ver": "#",
+            "url-codigo": "#",
+            "imagen": "assets/images/desarrollo web",
+            "lenguajes": ["html", "css", "bootstrap"]
+        },
+        {
+            "nombre-proyecto": "Studio Bad Dog",
+            "descripcion": "Sitio de una consultora de páginas web desarrollado en un curso de Bootstrap en YouTube.",
+            "url-ver": "https://cristianbarrios983.github.io/sitio-baddog/",
+            "url-codigo": "https://github.com/CristianBarrios983/sitio-baddog.git",
+            "imagen": "assets/images/proyecto-sitio-baddog.png",
+            "lenguajes": ["html", "css", "bootstrap"]
+        },
+        {
+            "nombre-proyecto": "Cake Shop",
+            "descripcion": "Página web replicada de una imagen de Pinterest.",
+            "url-ver": "https://cristianbarrios983.github.io/The-Cake-Shop/",
+            "url-codigo": "https://github.com/CristianBarrios983/The-Cake-Shop.git",
+            "imagen": "assets/images/proyecto-cake-shop.png",
+            "lenguajes": ["html", "css"]
+        },
+        {
+            "nombre-proyecto": "Login-Registro",
+            "descripcion": "Este es un proyecto muy sencillo que sirve para iniciar sesión y registrarse.",
+            "url-ver": "",
+            "url-codigo": "https://github.com/CristianBarrios983/login-registro.git",
+            "imagen": "assets/images/proyecto-login-registro.png",
+            "lenguajes": ["html", "bootstrap", "php"]
+        },
+        {
+            "nombre-proyecto": "Login-CRUD MVC",
+            "descripcion": "Aplicación de inicio de sesión y registro intermedio realizada mediante la arquitectura MVC.",
+            "url-ver": "",
+            "url-codigo": "https://github.com/CristianBarrios983/login-crud-mvc.git",
+            "imagen": "assets/images/proyecto-login-crud-mvc.png",
+            "lenguajes": ["html", "bootstrap", "php"]
+        },
+        {
+            "nombre-proyecto": "Mini Ecommerce",
+            "descripcion": "Aplicación de productos básica donde se pueden realizar pedidos y cuenta con un panel de administración para gestionar la aplicación.",
+            "url-ver": "",
+            "url-codigo": "https://github.com/CristianBarrios983/pagina-productos.git",
+            "imagen": "assets/images/proyecto-mini-ecommerce.png",
+            "lenguajes": ["html", "css", "bootstrap", "php"]
+        }
+    ]
+}

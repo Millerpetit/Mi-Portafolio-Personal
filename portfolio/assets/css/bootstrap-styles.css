@@ -1,0 +1,117 @@
+/* Colores de botones de bootstrap */
+
+.btn-primary{
+    background-color: var(--color5) !important;
+    border-color: var(--color5) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-primary:hover{
+    background-color: var(--kimberly) !important;
+    border-color: var(--kimberly) !important;
+    box-shadow: 0 0 15px var(--kimberly) !important;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-color: var(--kimberly) !important;
+    border-color: var(--kimberly) !important;
+    box-shadow: 0 0 15px var(--kimberly) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-danger{
+    background-color: var(--blue-dianne) !important;
+    border-color: var(--blue-dianne) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-danger:hover{
+    background-color: var(--color2) !important;
+    border-color: var(--color2) !important;
+    box-shadow: 0 0 15px var(--color2) !important;
+}
+
+.btn-danger:active,
+.btn-danger.active{
+    background-color: var(--color2) !important;
+    border-color: var(--color2) !important;
+    box-shadow: 0 0 15px var(--color2) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+}
+
+.btn-success{
+    background-color: var(--jungle-green) !important;
+    border-color: var(--jungle-green) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-success:hover{
+    background-color: var(--eastern-blue) !important;
+    border-color: var(--eastern-blue) !important;
+    box-shadow: 0 0 15px var(--eastern-blue) !important;
+}
+
+.btn-success:active,
+.btn-success.active{
+    background-color: var(--eastern-blue) !important;
+    border-color: var(--eastern-blue) !important;
+    box-shadow: 0 0 15px var(--eastern-blue) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-info{
+    background-color: var(--a1) !important;
+    border-color: var(--a1) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.btn-info:hover{
+    background-color: var(--a2) !important;
+    border-color: var(--a2) !important;
+    box-shadow: 0 0 15px var(--a2) !important;
+}
+
+.btn-info:active,
+.btn-info.active{
+    background-color: var(--a2) !important;
+    border-color: var(--a2) !important;
+    box-shadow: 0 0 15px var(--a2) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.buttons-project > .btn{
+    width: 165px;
+    height: 50px;
+}
+
+/* Badge de bootstrap */
+
+.text-bg-primary{
+    background-color: var(--color5) !important;
+}
+
+/* Textos bootstrap */
+
+.text-warning{
+    color: var(--casper) !important;
+    text-shadow: 0 0 15px var(--casper) !important;
+}
+
+/* Enlaces de bootstrap */
+
+.nav-link{
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    color: var(--a1) !important;
+    text-shadow: 0 0 15px var(--color2) !important;
+    font-weight: bolder;
+}
+
+/* inputs de bootstrap */
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgba(76, 110, 129, 0.40) !important;
+}

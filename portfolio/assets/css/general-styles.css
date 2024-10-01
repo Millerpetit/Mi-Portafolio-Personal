@@ -1,0 +1,272 @@
+:root{
+    /* Paleta de colores */
+    --iceberg: #D9ECF2;
+    --froly: #F56A79;
+    --coral-red: #FF414D;
+    --eastern-blue: #1AA6B7;
+    --prussian-blue: #002D40;
+
+    --ship-cove: #758EB7;
+    --kimberly: #6F5F90;
+    --strikemaster: #8A5082;
+    --geraldine: #FF7889;
+    --casper: #A5CAD2;
+
+    --color1: #7aacb3;
+    --color2: #4c6e81;
+    --color3: #cf8da7;
+    --color4: #aa5377;
+    --color5: #3b3759;
+
+    --blue-dianne: #264653;
+    --jungle-green: #2A9D8F;
+    --rob-roy: #E9C46A;
+    --sandy-brown: #F4A261;
+    --burnt-sienna: #E76F51;
+
+    --morning-glory: #9AE1E2;
+
+    /* AQUA */
+    --a1: #3BAFDA;
+    --a2: #4FC1E9;
+
+    --banana-yellow: #FFE720;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;  
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400; 
+    src: url('https://fonts.gstatic.com/s/montserrat/v22/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2') format('woff2');
+}
+
+body{
+    font-family: 'Poppins', 'Monserrat', sans-serif;
+}
+
+/* Preloader */
+
+.overlay-pre{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(76, 110, 129, 0.8); /* Fondo semitransparente azul */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Boton de ir hacia arriba */
+#scrollToTop{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 90px;
+    background-color: var(--blue-dianne);
+    z-index: 1;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: popup .7s ease-in-out;
+}
+
+#scrollToTop:hover{
+    background-color: var(--color2);
+    box-shadow: 0 0 15px var(--color2);
+}
+
+@keyframes popup {
+    0%{
+        width: 40px;
+        height: 40px;
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Seccion Menu */
+
+#nav{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#nav.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInOut 0.7s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+/* Seccion home */
+
+.home{
+    background-image: url('../images/fondo2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Seccion sobre mi */
+.text-muted{
+    text-align: justify;
+}
+
+.foto-container{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 7px solid var(--ship-cove);
+    overflow: hidden;
+}
+
+.foto-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay-socials{
+    position: absolute;
+    background-color: rgba(76, 110, 129, 0.8);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.7s ease, height 0.7s ease-in-out;
+}
+
+.foto-container:hover .overlay-socials{
+    opacity: 1;
+    height: 40%;
+}
+
+/* Seccion habilidades */
+
+.skill{
+    aspect-ratio: 1/1;
+    width: 170px;
+    transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+.skill:hover{
+    background-color: var(--color2) !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px var(--color2);
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+/* Seccion de servicios */
+
+.service-item{
+    transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+.service-item:hover{
+    background-color: var(--color2) !important;
+    color: #fff !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--color2) !important;
+    cursor: pointer;
+}
+
+.service-item:hover .icon > i{
+    color: #fff;
+}
+
+.icon > i{
+    color: var(--color2);
+}
+
+/* Seccion proyectos */
+
+.card-img-top{
+    transition: filter 0.7s ease-in-out;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(76, 110, 129, 0.8);
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    box-shadow: 0 0 15px var(--color2);
+    transition: opacity 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+.proyecto:hover .card-img-top{
+    filter: blur(3px);
+}
+
+.fade{
+    transition: opacity 0.25s ease-in-out !important;
+}
+
+.modal-close{
+    border: none !important;
+}
+
+/* Seccion Contacto */
+
+
+/* Enlaces */
+
+.social-link{
+    transition: transform 0.7s ease-in-out;
+}
+
+.social-link:hover{
+    transform: scale(1.2);
+}
+
+.social-link > i{
+    font-size: 38px;
+}
